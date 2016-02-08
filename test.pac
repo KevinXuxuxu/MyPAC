@@ -27,9 +27,9 @@ function FindProxyForURL(url, host) {
 // // DEFAULT RULE: All other traffic, use below proxies, in fail-over order.
 //     return "PROXY 4.5.6.7:8080; PROXY 7.8.9.10:8080";
 
-    if (shExpMatch(host, "(*.gmail.com|gmail.com)") ||
-        shExpMatch(host, "(*.google.com|google.com)") || )
-        return "SOCKS 127.0.0.1:1080; DIRECT";
+    if (shExpMatch(url, "*gmail.com*") ||
+        shExpMatch(url, "*google.com*") || )
+        return "SOCKS5 127.0.0.1:1080; DIRECT";
 
     return "DIRECT";
 
