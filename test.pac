@@ -29,7 +29,7 @@ function FindProxyForURL(url, host) {
 
     if (shExpMatch(host, "(*.gmail.com|gmail.com)") ||
         shExpMatch(host, "(*.google.com|google.com)") || )
-        return "PROXY 127.0.0.1:1080";
+        return "PROXY 54.92.101.224:443";
 
     return "DIRECT";
 
